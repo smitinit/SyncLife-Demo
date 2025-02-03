@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import Tasks from "./components/Tasks";
-import AvatarViewer from "./components/AvatarViewer";
+import Tasks from "./components/TasksPage";
+import AvatarViewer from "./components/AvatarPage";
 import HomePage from "./components/HomePage";
 
 function App() {

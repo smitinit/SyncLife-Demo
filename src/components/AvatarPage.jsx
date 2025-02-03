@@ -21,7 +21,7 @@ const Avatar = ({ url }) => {
       ref={avatarRef}
       object={scene}
       scale={1.5}
-      position={[0, 0, 0]}
+      position={[0, -0.7, 0]}
       castShadow
     />
   );
@@ -39,6 +39,10 @@ const avatarOptions = [
     label: "Character_Male-1",
     url: "https://models.readyplayer.me/679f9b9b460cb60ba5c827ce.glb",
   },
+  // {
+  //   label: "After_Change cm-1",
+  //   url: "https://models.readyplayer.me/679f9b9b460cb60ba5c827ce.glb",
+  // },
   {
     label: "Character_Male-2",
     url: "https://models.readyplayer.me/679fa7ffc67d3b4b83d7ec8c.glb",
@@ -117,7 +121,7 @@ const AvatarViewer = () => {
           shadows
           camera={{ position: [0, 1.5, 4], fov: 60 }}
           gl={{ antialias: true }}
-          className="rounded-lg"
+          className="rounded-lg "
         >
           <SoftShadows size={50} near={9} samples={8} rings={11} />
           <ambientLight intensity={0.5} />
@@ -140,7 +144,7 @@ const AvatarViewer = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
             maxDistance={5}
-            minDistance={2}
+            minDistance={1}
             target={[0, 1.5, 0]}
           />
         </Canvas>
